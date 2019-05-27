@@ -12,6 +12,7 @@ using My.Custom.Template.Misc;
 using My.Custom.Template.Mapping;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace my.custom.template_backend
 {
@@ -38,6 +39,9 @@ namespace my.custom.template_backend
 
             var config = new MapperConfiguration(cfg => { cfg.AddProfile(new AutoMapperConfiguration()); });
             services.AddSingleton<IMapper>(sp => config.CreateMapper());
+
+            services.AddLogging(loggingBuilder =>
+                loggingBuilder.AddSerilog(dispose: true));
 
             services.AddCors(options =>
             {
