@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Threading;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 
 namespace My.Custom.Template.DataLayer.Context
