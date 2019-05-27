@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using PayPing.Products.Entities.Helpers;
+using My.Custom.Template.Entities.Helpers;
 
 namespace My.Custom.Template.DataLayer.Abstract
 {

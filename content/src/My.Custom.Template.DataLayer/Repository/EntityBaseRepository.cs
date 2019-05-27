@@ -5,7 +5,9 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-
+using My.Custom.Template.DataLayer.Abstract;
+using My.Custom.Template.DataLayer.Context;
+using My.Custom.Template.Entities.Helpers;
 
 namespace My.Custom.Template.DataLayer.Repository
 {
@@ -13,10 +15,10 @@ namespace My.Custom.Template.DataLayer.Repository
         where T : class, IEntityBase, new()
     {
 
-        private ProductsDbContext _context;
+        private ApplicationDbContext _context;
 
         #region Properties
-        public EntityBaseRepository(ProductsDbContext context)
+        public EntityBaseRepository(ApplicationDbContext context)
         {
             _context = context;
         }
