@@ -1,0 +1,12 @@
+{
+	"author": "Ashkan Rahmani",
+	"classifications": [ "api", "swagger", "docker" ],
+	"name": "Ashkan Starter Web",
+	"identity": "Ashkan.StarterWeb",
+	"shortName": "ashkanweb",
+	"tags": {
+		"language": "C#"
+	},
+	"sourceName": "My.Custom.Template",
+	"preferNameDirectory": "true"
+}
