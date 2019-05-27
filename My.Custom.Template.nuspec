@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Ashkan.Custom.Template</id>
+    <version>2.0.7.1</version>
+    <description>
+      HTTP Api template. Included swagger and docker
+    </description>
+    <authors>Ashkan Rahmani</authors>
+    <owners>Ashkan Rahmani</owners>
+    <projectUrl>https://github.com/ashkanRmk/My.Custom.Template</projectUrl>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+      New packages, use env and new Dockerfile for build
+    </releaseNotes>
+    <copyright>Copyright 2019-2020</copyright>
+    <tags>csharp dotnet aspnet core template web http rest api swagger docker</tags>
+  </metadata>
+</package>
