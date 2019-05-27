@@ -8,6 +8,8 @@ namespace my.custom.template_backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Produces("application/json")]
+    [ApiExplorerSettings(GroupName = "v1")]
     public class ValuesController : ControllerBase
     {
         // GET api/values

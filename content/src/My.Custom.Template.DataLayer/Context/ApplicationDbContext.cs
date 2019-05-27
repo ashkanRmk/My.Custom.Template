@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using System.Threading;
-using System;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
 
@@ -14,7 +12,7 @@ namespace My.Custom.Template.DataLayer.Context
 
 
 
-        public ApplicationDbContext(DbContextOptions<ProductsDbContext> options) : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
 
         public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default(CancellationToken))
